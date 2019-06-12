@@ -1,0 +1,908 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden; 
+    background-color: #A18654;
+   
+}
+
+
+
+.navcontent{
+    
+    z-index: 3;
+   opacity: .2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0;
+   border-bottom: 1.5px solid white;
+  
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* HOME VIDEO CONTENT BEGINS HERE */
+
+
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000B23;
+    z-index: 1;
+    opacity: 0.80;
+}
+
+.header-content{
+    z-index: 2;
+}
+
+.header-content h1{
+    font-size: 40px;
+    margin-bottom: 0;
+    color:#A18654;
+}
+
+.header-content p{
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+    color:#A18654;
+}
+
+.btn{
+    background:#A18654;
+    color: #000B23;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    
+}
+
+.btn:hover{
+    background:#A18654;
+    color: #000B23;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    transition: 0.5s;
+    transition-delay: 0,5s;
+    cursor: pointer;
+}
+
+@media(max-width:960px){
+    .container{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+
+
+/* HOME VIDEO CONTENT ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.homebox2{
+    background-image: url(../assets/gold_bg.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 700px;
+ 
+}
+
+ /* PROFILES BEGINS HERE */ 
+
+.profilecontent{
+    
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 700px;
+     justify-content: center;
+     
+    align-content: center;
+    grid-gap: 5rem;
+}
+
+.profilebianca{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 440px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+    
+ 
+
+}
+
+.profilebianca img{
+   width: 100%;
+   
+}
+
+ .viewbianca{
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 5px 10px;
+    background: #fff;
+    color: #000B23;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold; 
+}
+
+.detailsbianca{
+    height: 55%;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    transform: perspective(50px) scale(0);
+}
+
+.detailsbianca.active{
+    transform: perspective(50px) scale(1);
+}
+
+.detailsbianca h2{
+   margin:0;
+    padding: 0;
+    color: #A18654;
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+
+.detailsbianca h2 span{
+    font-size: 14px;
+    color: #ccc;
+}
+
+.detailsbianca p{
+    margin: 0;
+    padding: 10px 0 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.detailsbianca h3{
+    background: #A18654;
+    color:#fff;
+    padding: 8px 50px;
+   
+    display: -webkit-inline-block;
+}
+
+.detailsbianca ul{
+    margin: 0;
+    padding: 0;
+    display: flex;  
+}
+
+.detailsbianca ul li{
+    list-style: none;
+    font-size: 30px;
+    width: 33.3%;
+}
+
+.detailsbianca ul li:nth-child(1) .fa{
+    color: #3b5998;
+}
+
+.detailsbianca ul li:nth-child(2) .fa{
+    color: #C13584;
+}
+
+.detailsbianca ul li:nth-child(3) .fa{
+    color: #dd4b39;
+}
+
+.close{
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #f00;
+    cursor: pointer;
+}
+/* PROFILES ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ABOUT BOX CONTENT BEGINS HERE */
+.aboutbox{
+    background-color:#000B23;
+    width: 37rem;
+    height: 16rem;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.aboutboxchild1{
+    width: 100%;
+    height: 100%;
+    background-image:url(../assets/resortbg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:0;
+    margin: 0;
+    
+}
+.aboutboxchild2{
+    width: 40%;
+   height: 100%;
+    
+    
+     
+}
+
+.aboutboxchild2 h1{
+   color:#A18654; 
+    margin-bottom: 12px;
+    text-decoration: underline ;
+    text-align: center;
+    margin-left: 50%;
+}
+
+.aboutboxchild2 h3{
+   color:white; 
+    font-size: 15px;
+    margin-top: 0;
+    padding-top: 0;
+   text-align: center;
+    margin-left: 50%;
+    
+}
+.aboutboxchild2 h4{
+   color:#A18654; 
+    margin-bottom: 12px;
+    text-decoration: underline ;
+    text-align: center;
+}
+
+
+/* ABOUT BOX CONTENT ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* OUR STANDART BEGINS HERE */
+
+.infoabout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    margin:0;
+    grid-auto-rows:30em;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    grid-gap: 20px;
+}
+
+.infoaboutchild1 {
+    background-image:  url(../assets/squaregoldshape.png);
+    background-position:center;
+    background-size:cover;
+    width: 30em;
+    height: 30em;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 3em;
+}
+
+.infoaboutchild1 h1, h3, h4{
+    
+    color:#A18654;
+    text-align: center;
+   
+    
+}
+.infoaboutchild1 h1{
+   
+    margin-top: 25%;
+    text-decoration: underline ;
+}
+.infoaboutchild1 h4{
+
+    text-decoration: underline ;
+}
+
+/* CAROUSEL STARTS HERE */
+
+.ourstandartcarousel{
+    width: 80%;
+    height: 70%;
+    
+    margin-top: 8em;
+    border: 5px solid #A18654;
+    margin-left: auto;
+    margin-right: auto; 
+   
+}
+
+
+#slider, .wrap, .slide-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.wrap{
+    position:relative;
+    
+}
+
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     width: 100%;
+    height: 100%;
+}
+
+.slide1{
+    background-image: url("../assets/house1.jpg");
+}
+
+.slide2{
+    background-image: url("../assets/house2.jpg");
+}
+
+.slide3{
+    background-image: url("../assets/house3.jpg");
+}
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arrow{
+    cursor:pointer;
+    position: absolute;
+    top:50%;
+    margin-top: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 20px 25px 20px 0;
+    border-color: transparent #A18654 transparent transparent;
+    left:0;
+    margin-left: 15px;
+    opacity: .6;
+    
+}
+
+#arrow-right{
+    border-width: 20px 0 20px 25px;
+    border-color: transparent transparent transparent #A18654;
+    right:0;
+    margin-right: 15px;
+     opacity: .6;
+}
+
+
+
+/* CAROUSEL ENDS HERE */
+
+/* OUR STANDART ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* BOX OURS SERVICES STARTS HERE */
+.homebox3{
+    background-image: url(../assets/resortbg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    
+}
+.childhomebox3{
+    background-color:#000B23;
+    opacity: 0.9;
+    
+}
+.childhomebox3 .titlehomebox3 {
+ text-align: center;
+   color:#A18654;
+  
+}
+
+.childhomebox3 .iconcontent {
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin-top:3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    grid-auto-rows:65px; 
+    
+}
+.childhomebox3 .iconcontent :hover {
+  
+    opacity: 0.6;
+     transition: opacity 0,7s ease;
+}
+.houseicon{
+    background-image: url(../assets/houseicon.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+.keyholdingicon{
+    background-image: url(../assets/keyholdingicon.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 30%;
+    margin-right: 30%;
+cursor: pointer;
+}
+
+.transfericon{
+    background-image: url(../assets/transfericon.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+.excurcionicon{
+    background-image: url(../assets/excurcionicon.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    cursor: pointer;
+ 
+}
+
+.childhomebox3 .titlehomebox3 h4 {
+    text-align: center;
+   color:#A18654; 
+    margin-top: 0;
+   cursor: pointer;
+    
+}
+
+.childhomebox3 .titlehomebox3 h3 {
+ text-align: center;
+   color:#A18654; 
+    margin-bottom: 0;
+
+    
+}
+.childhomebox3 .titlehomebox3 h1 {
+ 
+text-decoration: underline;
+    
+}
+/* BOX OURS SERVICES ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* BOX PROPERTIES BEGINS HERE */
+
+.homebox4{
+    background-image: url(../assets/listingbg.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    height: 1000px;
+    
+}
+
+.childhomebox4{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 250px;
+    margin-left: 70px;
+    
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background:#000;
+    box-shadow: 0, 30px, 30px, rgba(0,0,0, .5);
+}
+
+.box .imgbox{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+
+.box .imgbox img{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    
+}
+
+.box:hover .imgbox img{
+    opacity: 0;
+
+}
+.box .content{
+    position: absolute;
+    bottom:20px;
+    left:10%;
+    width: 80%;
+    height: 60px;
+    background: #000B23;
+   
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+  
+}
+
+.box:hover .content{
+    height: 100%;
+    width: 100%;
+    bottom:0;
+    left:0;
+ 
+}
+
+.box .content h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    
+}
+
+.box .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+    color: #A18654;
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.box:hover .content p{
+    opacity: 1;
+    transition-delay: 0,5s;
+    
+    
+}
+.btn1{
+    margin-top: 50px;
+    border: 2px solid #A18654;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color:#A18654;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.btn1:hover{
+   color: #000B23;
+    background-color: #A18654;
+}
+
+/* BOX PROPERTIES ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* CONTACT FORM BEGINS HERE */
+
+.homebox5{
+    background-image: url(../assets/contactbg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 450px;
+    
+    
+}
+.childhomebox5{
+    background-color:#000B23;
+    opacity: 0.9;
+    
+}
+
+.contactbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 450px;
+}
+.contactbox .text{
+    text-align: center;
+    color: #A18654;
+    z-index: 1;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+   
+}
+
+.contactbox .text p{
+   font-size: 20px;
+}
+
+.contactbox .text h1{
+  text-decoration: underline;
+}
+
+.form{
+    color: #A18654;
+    line-height: 1.4;
+    padding: 1rem;
+    font-weight: bold;
+     text-transform: uppercase;
+
+}
+
+.container{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+     margin-top: 2rem;
+}
+
+
+
+.wrapper > *{
+   padding-left: 5rem;
+   padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.contact{
+    background: #000B23;
+    
+}
+
+/*styling form*/
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+  
+    
+}
+
+.contact form label{
+   display: block; 
+     
+}
+
+.contact form p{
+    margin: 0;
+}
+
+.contact form .full{
+    grid-column: 1 / 3;
+}
+
+.contact form input{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #A18654;
+    
+}
+
+.contact form textarea{
+    width: 100%;
+    height: 5rem;
+    border: 1px solid #A18654;
+    
+}
+
+.contact form button{
+    width: 30%;
+    height: 3rem;
+    background: #A18654;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid #A18654;
+}
+
+.contact form button:hover, .contact form button:focus{
+    width: 35%;
+    height: 3rem;
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+
+
+/* CONTACT FORM ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* FOOTER STARTS HERE */
+
+.socials-a{
+    text-decoration: none;
+}
+  
+.socials-a ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+   margin-left: 45%;
+ 
+   
+}
+
+.socials-a  ul li{
+    list-style: none;
+    font-size: 25px;
+    width: 6%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.socials-a  ul li:nth-child(1) .fa{
+    color: white;
+}
+
+.socials-a  ul li:nth-child(2) .fa{
+    color: white;
+}
+
+.credits{
+   color: white;
+     list-style: none;
+    padding-bottom: 10px;
+    
+    font-size: bold;
+}
+
+.credits-a .dias{
+    font-size: bold;
+     list-style: none;
+}
+
+/* FOOTER ENDS HERE */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+

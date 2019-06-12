@@ -1,0 +1,16 @@
+/*  CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color:lightgray;
+    opacity: 0.5;
+   
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #A18654;
+    opacity: 0.5;
+}
+
+/*  CUSTOM SCROLLBAR */
